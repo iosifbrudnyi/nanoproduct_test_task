@@ -10,13 +10,26 @@
 <p>В проекте существует 3 сущности (User, Doctor, Appointment) и 3 метода обращения к ним</p>
 <ul>
   <li>http://localhost:{PORT FROM .ENV}/api/create_user - создание сущности User</li> 
-    <b>Пример body:</b>
+    <p>Пример body:</p>
     <pre>{
-       phone: '+7 926 578 85 14',
-       name: 'Вася',
-      }
-  </pre>
-  <li>http://localhost:{PORT FROM .ENV}/api/create_user - создание сущности User</li>
-  <li>http://localhost:{PORT FROM .ENV}/api/create_user - создание сущности User</li>
+           phone: '+7 926 578 85 14',
+           name: 'Вася',
+         } 
+    </pre>
+   <li>http://localhost:{PORT FROM .ENV}/api/create_doctor - создание сущности Doctor</li> 
+    <p>Пример body:</p>
+    <pre>{
+           "name" : "Alexander",
+           "spec": "Терапевт"
+          }
+     </pre>
+   <li>http://localhost:{PORT FROM .ENV}/api/create_appointment - создание сущности Appointment</li> 
+    <p>Пример body:</p>
+    <pre>{
+           "user_id": "6449375d8daf3b5c2debe741",
+           "doctor_id": "644a6055fd33d88208ed13e3",
+            "slot": "1682625786003"
+         }
+    </pre>
 
 </ul>
