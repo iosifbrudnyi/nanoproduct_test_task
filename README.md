@@ -11,11 +11,11 @@
 <ul>
   <li>http://localhost:{PORT FROM .ENV}/api/create_user - создание сущности User</li> 
     <b>Пример body:</b>
-    <p>{
+    <pre>{
        phone: '+7 926 578 85 14',
        name: 'Вася',
       }
-  </p>
+  </pre>
   <li>http://localhost:{PORT FROM .ENV}/api/create_user - создание сущности User</li>
   <li>http://localhost:{PORT FROM .ENV}/api/create_user - создание сущности User</li>
 
